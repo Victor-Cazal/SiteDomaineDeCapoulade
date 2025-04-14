@@ -6,9 +6,14 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Titre de votre site</title>
+        <link rel="icon" href="Images/manoir.png" type="image/x-icon">
+        <title>Domaine de Capoulade</title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
 
     </head>
 
@@ -18,26 +23,24 @@
         <!--En tête du site-->
         <header>
 
-            <div class="enTete">
+            <div class="enTete" id="headerAnimé">
 
+                <!--Logo-->
                 <div class="logo">
-
-                    <img src="Images/logo.jpg" alt="Logo du header" />
-
+                    <img src="Images/logo.jpg" alt="Logo du header">
                 </div>
 
-                <div class="navigation">
+                <div class="menu">
 
                     <!--Titre-->
                     <h1>Domaine de Capoulade</h1>
+                    <h2>- Chambres d'hôtes -</h2>
 
                     <!--Menu de navigation-->
                     <nav>
                         <ul>
-                            <li><a href="#">Accueil</a></li>
-                            <li><a href="#">Chambres</a></li>
-                            <li><a href="#">Réservations</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="chambre.html">Chambre</a></li>
+                            <li><a href="#">Contact et Réservation</a></li>
                         </ul>
                     </nav>
 
@@ -46,6 +49,102 @@
             </div>
 
         </header>
+
+            <!--Domaine-->
+            <section class="domaine">
+
+                    <div class="domaineImage">
+                        <img src="Images/vigne.jpg" alt="photo de vignes">
+                    </div>
+
+                    <div class="domaineTexte">
+                        <h2>En pleine nature</h2>
+                        <ul>
+                            <li>Au coeur des vignes</li>
+                            <li>Aux portes de Narbonne</li>
+                            <li>A proximité de la mer</li>
+                        </ul>
+                    </div>
+
+                    <div class="domaineImage">
+                        <img src="Images/clape.jpg" alt="photo de vignes">
+                    </div>
+
+            </section>
+
+            <!--Fond parallax-->
+            <div class="photoParallax"></div>
+
+            <!--Chambre-->
+            <section class="chambre">
+
+                    <h2>La chambre</h2>
+
+                    <div class="photosChambre">
+
+                        <div class="photoChambre">
+                            <img src="Images/chambre1.jpg" alt="photo de la chambre">
+                        </div>
+                        <div class="photoChambre">
+                            <img src="Images/chambre2.jpg" alt="photo de la chambre">
+                        </div>
+                        <div class="photoChambre">
+                            <img src="Images/chambre3.jpg" alt="photo du petit déjeuné">
+                        </div>                        
+                        
+                    </div>
+
+            </section>
+
+            <!--Contact-->
+            <section class="contact">
+
+                    <div class="coordonnées">
+
+                        <h2>Contact</h2>
+
+                        <div class="coordonnée">
+                            <img src="Images/telephone.png" alt="Icone téléphone">
+                            <p>04 68 32 67 68</p>
+                        </div>
+
+                        <div class="coordonnée">
+                            <img src="Images/mail.png" alt="Icone mail">
+                            <p>oizehfoih@gmail.com</p>
+                        </div>
+
+                        <div class="coordonnée">
+                            <img src="Images/adresse.png" alt="Icone adresse">
+                            <p>Domaine de Capoulade 11100 Narbonne</p>
+                        </div>
+
+                    </div>
+
+                    <div class="plan">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46529.386600924605!2d3.0073822031721162!3d43.207671607933705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b1abe4ee32cd97%3A0x17af80e41c7b8e8f!2sDom.%20de%20Capoulade%2C%2011100%20Narbonne!5e0!3m2!1sfr!2sfr!4v1705434087052!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    </div>
+
+            </section>
+
+            <footer>
+
+                <div class="piedDePage">
+
+                    <div class="droitImage">
+                        <a href="https://www.flaticon.com/fr" title="immobilier icônes">Toutes les icones ont été créées par Freepik - Flaticon</a>
+                    </div>
+
+                    <div class="logoPartenaire">
+                        <img src="Images/logoGiteDeFrance.png" alt="Logo de gite de France">
+                    </div>
+
+                </div>
+
+            </footer>
+
+
 
     </body>
 

@@ -1,0 +1,128 @@
+:root {
+    /*Couleurs*/
+    --couleurPrimaire: #6d071a;
+    --couleurSecondaire: #BB9FA3;
+    --couleurTertiaire: #333;
+    --couleurDeFond: #f2f2f2;
+    --couleurDeFondSection: #C8B8BA;
+
+    /*Propriétés des textes*/
+    --policePrincipal: 'DM Serif Display', serif;
+    --policeSecondaire: "Segoe Script", cursive;
+    --tailleTire: 20px;
+    --tailleTexte: 16px;
+
+    /*Bordures et marges*/
+    --ombre: 0 -5px 10px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.3);
+    --bordure: 2px solid var(--couleurPrimaire);
+    --bordureAngle: 10px;
+    --margin-standard: 10px;
+    --padding-standard: 15px;
+}
+
+section, article{
+    margin-top: 50px;
+    box-sizing: border-box;
+    background-color: var(--couleurDeFondSection);
+    box-shadow: var(--ombre);
+}
+
+/* Textes */
+.titre {
+    color: var(--couleurPrimaire);
+    font-family: var(--policeSecondaire);
+    font-size: var(--tailleTire);
+}
+
+.titreLien {
+    color: var(--couleurPrimaire);
+    font-family: var(--policeSecondaire);
+    font-size: var(--tailleTire);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+    .titreLien:hover {
+        color: var(--couleurSecondaire);
+    }
+
+.textePrimaire {
+    font-family: var(--policePrincipal);
+    color: var(--couleurTertiaire);
+    font-size: var(--tailleTexte);
+}
+
+.texteSecondaire {
+    font-family: var(--policePrincipal);
+    color: var(--couleurPrimaire);
+    font-size: var(--tailleTexte);
+}
+
+.texteTertiaire {
+    font-family: var(--policeSecondaire);
+    color: var(--couleurTertiaire);
+    font-size: var(--tailleTexte);
+}
+
+.texteLien {
+    color: var(--couleurPrimaire);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+    .texteLien:hover {
+        border-bottom: solid;
+    }
+
+/* Images */
+.conteneurPhoto {
+    width: 30%;
+    margin: var(--margin-standard);
+}
+
+    .photo {
+        width: 100%;
+        border: var(--bordure);
+        border-radius: var(--bordureAngle);
+    }
+
+/* Carousel */
+.carrousel {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.carrouselBoutons {
+    display: flex;
+    align-items: center;
+}
+
+.carouselBoutonPrecedent, .carrouselBoutonSuivant {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    color: #6d071a;
+    cursor: pointer;
+}
+
+.carrouselPointsDefilement {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 8px;
+}
+
+    .point {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #ccc;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .point.actif {
+            background-color: #6d071a;
+        }

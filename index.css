@@ -1,26 +1,9 @@
-/*Style pour la section domaine*/
+/* Style pour la section domaine */
 .domaine {
     margin-top: 140px;
-    box-sizing: border-box;
-
-    background-color: #C8B8BA;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.3);
-
     display: flex;
     justify-content: space-between;
 }
-
-    .domaineImage {
-        width: 35%;
-        margin: 10px;
-
-    }
-
-        .domaineImage img {
-            width: 100%;
-            border: solid 2px #6d071a;
-            border-radius: 10px;
-        }
 
     .domaineTexte {
         display: flex;
@@ -29,85 +12,40 @@
         text-align: center;
     }
 
-        .domaineTexte h2 {
-            color: #6d071a;
-            font-family: "segoe Script", cursive;
-            font-size: 20px;
-        }
-
         .domaineTexte ul {
             margin: 0;
             padding: 0;
-
             list-style: none;
         }
 
             .domaineTexte ul li {
                 margin-bottom: 5px;
-
                 font-size: 16px;
-                font-family: "DM Serif Display", serif;
             }
 
-/*Style pour image parallax*/
+/* Style pour image parallax */
 .photoParallax {
     margin-top: 50px;
-
-    background: url(Images/photoDomaine.jpg) no-repeat fixed;
+    background: url('Images/photoDomaine.jpg') no-repeat fixed;
     background-position: center center;
     background-size: cover;
     min-height: 500px;
 }
 
-/*Style pour la section chambre*/
+/* Style pour la section chambre */
 .chambre {
-    margin-top: 50px;
-    box-sizing: border-box;
-
-    background-color: #C8B8BA;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.3);
-
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-
-    .chambre a {
-        color: #6d071a;
-        font-family: "segoe Script", cursive;
-
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-
-    .chambre a:hover {
-        color: #BB9FA3;
-    }
 
     .photosChambre {
         display: flex;
         justify-content: space-around;
     }
 
-        .photoChambre {
-            width: 30%;
-            margin-bottom: 10px;
-        }
-
-            .photoChambre img {
-                width: 100%;
-                border: solid 2px #6d071a;
-                border-radius: 10px;
-            }
-
-/*Style pour la section contact*/
+/* Style pour la section contact */
 .contact {
-    margin-top: 50px;
-    box-sizing: border-box;
-
-    background-color: #C8B8BA;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.3);
-
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -119,52 +57,23 @@
         align-items: center;
     }
 
-        .lienContactEtReservation{
-            color: #6d071a;
-            font-family: "segoe Script", cursive;
-
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .lienContactEtReservation:hover {
-            color: #BB9FA3;
-        }
-
         .coordonnée {
             display: flex;
             align-items: center;
             width: 100%;
         }
 
-            .coordonnée img{
+            .coordonnée img {
                 max-width: 40px;
                 height: 40px;
                 padding-right: 50px;
             }
 
-            .coordonnée p {
-                font-size: 16px;
-                font-family: "DM Serif Display", serif;
-            }
+.plan {
+    margin: var(--margin-standard) 0;
+    border: var(--bordure);
+}
 
-                .lienExt {
-                    color: #6d071a;
-                    text-decoration: none;
-                    border-bottom: 2px solid transparent;
-                    transition: all 0.3s ease;
-                }
-
-                .lienExt:hover {
-                    border-bottom: 2px solid #6d071a;
-                }
-
-    .plan {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border: solid 2px  #BB9FA3;
-    }
-
-        .plan iframe {
-            height: 300px;
-        }
+.plan iframe {
+    height: 300px;
+}

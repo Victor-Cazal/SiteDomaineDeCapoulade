@@ -6,112 +6,135 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Découvrez le Domaine de Capoulade, une chambre d'hôte chaleureuse au coeur des vignes de la Narbonnaise.">
+        <meta name="keywords" content="chambre d’hôtes, Domaine de Capoulade, hébergement, séjour, vacances, petit déjeuner, Narbonne">
+        <meta property="og:title" content="Chambre d'hôte - Domaine de Capoulade">
+        <meta property="og:description" content="Découvrez le Domaine de Capoulade, une chambre d'hôte chaleureuse au coeur des vignes de la Narbonnaise.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+
+
+        <!-- Favicone et titre-->
         <link rel="icon" href="Images/vignoble.png" type="image/x-icon">
         <title>Domaine de Capoulade</title>
-        <link rel="stylesheet" href="enTete.css">
+
+        <!-- Feuilles de style-->
+        <!--link rel="stylesheet" href="ancienIndex.css"-->
+        <link rel="stylesheet" href="styleGlobal.css">
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="enTete.css">
         <link rel="stylesheet" href="piedDePage.css">
+
+        <!-- script JS-->
         <script src="enTete.js"></script>
         <script src="piedDePage.js" defer></script>
 
+        <!-- Polices -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
 
     </head>
 
-    <!--Corp du site-->
+    <!-- Corps du site -->
     <body>
 
-        <!--En tete-->
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                chargerEnTete([
-                    { text: "Chambre", href: "chambre.html" },
-                    { text: "Contact et Réservation", href: "contactEtReservation.html" }
-                ]);
-            });
-        </script>
+        <!-- En tete -->
+        <nav>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    chargerEnTete([
+                        { text: "Chambre", href: "chambre.html" },
+                        { text: "Contact et Réservation", href: "contactEtReservation.html" }
+                    ]);
+                });
+            </script>
+        </nav>
 
-            <!--Domaine-->
-            <section class="domaine">
+        <!-- Domaine -->
+        <article class="domaine">
 
-                    <div class="domaineImage">
-                        <img src="Images/vigne.jpg" alt="photo de vignes">
-                    </div>
+            <!-- Image gauche -->
+            <div class="conteneurPhoto">
+                <img class="photo" src="Images/vigne.jpg" alt="Vignes autour du domaine">
+            </div>
 
-                    <div class="domaineTexte">
-                        <h2>En pleine nature</h2>
-                        <ul>
-                            <li>Au coeur des vignes</li>
-                            <li>Aux portes de Narbonne</li>
-                            <li>A proximité de la mer</li>
-                        </ul>
-                    </div>
+            <!-- description -->
+            <div class="domaineTexte">
+                <h2 class="titre">En pleine nature</h2>
+                <ul class="textePrimaire">
+                    <li>Au coeur des vignes</li>
+                    <li>Aux portes de Narbonne</li>
+                    <li>A proximité de la mer</li>
+                </ul>
+            </div>
 
-                    <div class="domaineImage">
-                        <img src="Images/clape.jpg" alt="photo de vignes">
-                    </div>
+            <!-- Image Droite -->
+            <div class="conteneurPhoto">
+                <img class="photo" src="Images/clape.jpg" alt="Centre de Narbonne et son canal">
+            </div>
 
-            </section>
+        </article>
 
-            <!--Fond parallax-->
-            <div class="photoParallax"></div>
+        <!--Fond parallax-->
+        <div class="photoParallax" role="presentation" aria-hidden="true"></div>
 
-            <!--Chambre-->
-            <section class="chambre">
+        <!--Chambre-->
+        <section class="chambre">
 
-                    <a href="chambre.html"><h2>La chambre</h2></a>
+            <a class="titreLien" href="chambre.html"><h2>La chambre</h2></a>
 
-                    <div class="photosChambre">
+            <div class="photosChambre">
 
-                        <div class="photoChambre">
-                            <img src="Images/chambre1.jpg" alt="photo de la chambre">
-                        </div>
-                        <div class="photoChambre">
-                            <img src="Images/chambre2.jpg" alt="photo de la chambre">
-                        </div>
-                        <div class="photoChambre">
-                            <img src="Images/chambre3.jpg" alt="photo du petit déjeuné">
-                        </div>                        
+                <div class="conteneurPhoto">
+                    <img class="photo" src="Images/chambre1.jpg" alt="Vue de la chambre">
+                </div>
+                <div class="conteneurPhoto">
+                    <img class="photo" src="Images/chambre2.jpg" alt="Vue de la chambre">
+                </div>
+                <div class="conteneurPhoto">
+                    <img class="photo" src="Images/chambre3.jpg" alt="Petit déjeuné">
+                </div>
                         
-                    </div>
+            </div>
 
-            </section>
+        </section>
 
-            <!--Contact-->
-            <section class="contact">
+        <!--Contact et reservation-->
+        <section class="contact">
 
-                <div class="coordonnées">
+            <!-- Adresse et coordonnées -->
+            <div class="coordonnées">
 
-                    <a href="contactEtReservation.html" class="lienContactEtReservation"><h2>Contact et réservation</h2></a>
+                <a class="titreLien" href="contactEtReservation.html"><h2>Contact et réservation</h2></a>
 
-                    <div class="coordonnée">
-                        <img src="Images/reservation.png" alt="Icône calandrier">
-                        <p>Réservation via <a href="https://www.gites-de-france.com/fr/occitanie/aude/domaine-de-capoulade-11g900405" class="lienExt">Gîte de france</a> ou <a href="https://www.booking.com/hotel/fr/domaine-de-capoulade.fr.html?aid=318615&label=New_French_FR_FR_21427174465-Pk3jEylX2FWP%2An3y4lDZiQS637818831021%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-162435868585%3Alp9055225%3Ali%3Adec%3Adm%3Aag21427174465%3Acmp339479545&sid=b383b80ed60535a2b7b131b7cbc9846a&dest_id=900039110&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1745089007&srpvid=b15f85068686031e&type=total&ucfs=1&" class="lienExt">Booking</a></p>
-                    </div>
-
-                    <div class="coordonnée">
-                        <img src="Images/contactez-nous.png" alt="Icône contact">
-                        <p>Vous pouvez nous contacter <a href="contactEtReservation.html" class="lienExt">ici</a></p>
-                    </div>
-
-                    <div class="coordonnée">
-                        <img src="Images/localisateur.png" alt="Icône localisation">
-                        <p>Domaine de Capoulade 11100 Narbonne</p>
-                    </div>
-
+                <div class="coordonnée">
+                    <img src="Images/reservation.png" alt="Icône calandrier" role="presentation" aria-hidden="true">
+                    <p class="textePrimaire">Réservation via <a class="texteLien" href="https://www.gites-de-france.com/fr/occitanie/aude/domaine-de-capoulade-11g900405">Gîte de france</a> ou <a class="texteLien" href="https://www.booking.com/hotel/fr/domaine-de-capoulade.fr.html?aid=318615&label=New_French_FR_FR_21427174465-Pk3jEylX2FWP%2An3y4lDZiQS637818831021%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-162435868585%3Alp9055225%3Ali%3Adec%3Adm%3Aag21427174465%3Acmp339479545&sid=b383b80ed60535a2b7b131b7cbc9846a&dest_id=900039110&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1745089007&srpvid=b15f85068686031e&type=total&ucfs=1&">Booking</a></p>
                 </div>
 
-                <div class="plan">
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46529.386600924605!2d3.0073822031721162!3d43.207671607933705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b1abe4ee32cd97%3A0x17af80e41c7b8e8f!2sDom.%20de%20Capoulade%2C%2011100%20Narbonne!5e0!3m2!1sfr!2sfr!4v1705434087052!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    
+                <div class="coordonnée">
+                    <div class="conteneurLogo">
+                        <img src="Images/contactez-nous.png" alt="Icône contact" role="presentation" aria-hidden="true">
+                    </div>
+                    <p class="textePrimaire">Vous pouvez nous contacter <a class="texteLien" href="contactEtReservation.html">ici</a></p>
                 </div>
 
-            </section>
+                <div class="coordonnée">
+                    <img src="Images/localisateur.png" alt="Icône localisation" role="presentation" aria-hidden="true">
+                    <p class="textePrimaire">Domaine de Capoulade 11100 Narbonne</p>
+                </div>
 
-        <!--Footer-->
+            </div>
+
+            <!-- Plan d'accès (google map) -->
+            <div class="plan">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46529.386600924605!2d3.0073822031721162!3d43.207671607933705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b1abe4ee32cd97%3A0x17af80e41c7b8e8f!2sDom.%20de%20Capoulade%2C%2011100%20Narbonne!5e0!3m2!1sfr!2sfr!4v1705434087052!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+
+        <!-- Pied de page -->
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 chargerPiedDePage([

@@ -4,19 +4,26 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicone et titre-->
   <link rel="icon" href="Images/vignoble.png" type="image/x-icon">
   <title>Domaine de Capoulade</title>
 
-  <link rel="stylesheet" href="enTete.css">
+  <!-- Feuilles de style-->
+  <link rel="stylesheet" href="styleGlobal.css">
   <link rel="stylesheet" href="chambre.css">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-
-  <script src="enTete.js"></script>
-  <script src="chambre.js"></script>
-
-  <script src="piedDePage.js" defer></script>
+  <link rel="stylesheet" href="enTete.css">
   <link rel="stylesheet" href="piedDePage.css">
 
+  <!-- script JS-->
+  <script src="chambre.js"></script>
+  <script src="enTete.js"></script>
+  <script src="piedDePage.js" defer></script>
+
+  <!-- ploices-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
 
 </head>
 
@@ -32,40 +39,42 @@
     });
   </script>
 
-  <!--Carrousel-->
-  <div class="presentationChambre">
+  <!--Section chambre du Fossat-->
+  <article class="chambre">
+
     <div class="descriptionChambre">
-      <h2>Chambre du Fossat</h2>
-      <p class="textDescriptionChambre">
+      <h2 class="titre">Chambre du Fossat</h2>
+      <p class="textePrimaire">
         Grande chambre avec vue sur jardin.<br>
         Salle de bain et toilettes privatives.<br>
         Juxtaposée à un salon collectif chaleureux.<br>
         Service à thé et café.
       </p>
-      <p class="tarifDescriptionChambre">85€ la nuit, petit déjeuner compris (servis en terrasse selon météo).</p>
-      <p class="histoireDescriptionChambre">Le nom Fossat fait référence au château du Fossat, en région toulousaine, ayant apartenu à notre famille. Vous pourrez admirer de vieilles photos argentiques et un tableau représentant le château sur les murs de la chambre.</p>
+      <p class="texteSecondaire">85€ la nuit, petit déjeuner compris (servis en terrasse selon météo).</p>
+      <p class="texteTertiaire">Le nom Fossat fait référence au château du Fossat, en région toulousaine, ayant apartenu à notre famille. Vous pourrez admirer de vieilles photos argentiques et un tableau représentant le château sur les murs de la chambre.</p>
     </div>
+
     <div class="imagesChambre">
       <div class="carrousel">
-        <div class="bouton">
-          <button class="boutonPrecedent">&#10094;</button>
+        <div class="carrouselBoutons">
+          <button class="carouselBoutonPrecedent">&#10094;</button>
         </div>
-        <div class="carrouselImages">
-          <img src="Images/chambre1.jpeg" alt="Chambre 1">
-          <img src="Images/chambre2.jpeg" alt="Chambre 2">
-          <img src="Images/chambre3.jpeg" alt="Chambre 3">
-          <img src="Images/chambre4.jpeg" alt="Chambre 4">
-          <img src="Images/chambre5.jpeg" alt="Chambre 5">
-          <img src="Images/chambre6.jpeg" alt="Chambre 6">
-          <img src="Images/chambre7.jpeg" alt="Chambre 7">
+        <div class="conteneurPhoto">
+          <img class="photo" src="Images/chambre1.jpeg" alt="Chambre 1">
+          <img class="photo" src="Images/chambre2.jpeg" alt="Chambre 2">
+          <img class="photo" src="Images/chambre3.jpeg" alt="Chambre 3">
+          <img class="photo" src="Images/chambre4.jpeg" alt="Chambre 4">
+          <img class="photo" src="Images/chambre5.jpeg" alt="Chambre 5">
+          <img class="photo" src="Images/chambre6.jpeg" alt="Chambre 6">
+          <img class="photo" src="Images/chambre7.jpeg" alt="Chambre 7">
         </div>
-        <div class="bouton">
-          <button class="boutonSuivant">&#10095;</button>
+        <div class="carrouselBoutons">
+          <button class="carrouselBoutonSuivant">&#10095;</button>
         </div>
       </div>
-      <div class="pointsCarrousel"></div>
+      <div class="carrouselPointsDefilement"></div>
     </div>
-  </div>
+  </article>
 
 <!--Petit dej-->
 <div class="petitDejeuner">

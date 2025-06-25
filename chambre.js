@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const images = document.querySelectorAll('.carrouselImages img');
-    const boutonPrecedent = document.querySelector('.boutonPrecedent');
-    const pointsCarrousel = document.querySelector('.pointsCarrousel');
-    const boutonSuivant = document.querySelector('.boutonSuivant');
+    const images = document.querySelectorAll('.photo');
+    const boutonPrecedent = document.querySelector('.carouselBoutonPrecedent');
+    const pointsCarrousel = document.querySelector('.carrouselPointsDefilement');
+    const boutonSuivant = document.querySelector('.carrouselBoutonSuivant');
     let currentIndex = 0;
 
     // Crée les points de défilement

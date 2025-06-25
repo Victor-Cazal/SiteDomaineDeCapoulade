@@ -1,0 +1,45 @@
+.piedDePage {
+    margin-top: 50px;
+
+    background-color: #d5d1d0;
+    border: 2px solid #6d071a;
+    border-radius: 10px;
+    width: 98%;
+
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .droitImage {
+        height: 90%;
+        padding: 0 1% 0 1%;
+
+        border-right: 2px solid #6d071a;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .createurSite {
+        width : 50%;
+
+        border-right : 2px solid #6d071a;
+    }
+
+    .logosPartenaire {
+        width : 20%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        .logoPartenaire {
+            width : 20%;
+        }
+
+            .logoPartenaire img {
+                width : 100%;
+                object-fit: contain;
+            }

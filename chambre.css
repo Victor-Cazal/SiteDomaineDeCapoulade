@@ -1,0 +1,146 @@
+.presentationChambre {
+    margin-top: 50px;
+    box-sizing: border-box;
+
+    background-color: #C8B8BA;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+    .descriptionChambre {
+        width: 30%;
+        margin: 2%;
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+        .descriptionChambre h2 {
+            color: #6d071a;
+            font-family: "segoe Script", cursive;
+            font-size: 20px;
+        }
+
+        .textDescriptionChambre {
+            font-size: 16px;
+            font-family: "DM Serif Display", serif;
+        }
+
+        .tarifDescriptionChambre {
+            color: #6d071a;
+            font-size: 16px;
+            font-family: "DM Serif Display", serif;
+        }
+
+        .histoireDescriptionChambre {
+            font-family: "segoe Script", cursive;
+            font-size: 14px;
+        }
+
+    .imagesChambre{
+        margin : 5px 0 5px;
+        width: 70%;
+
+        display: flex;
+        flex-direction: column;     /* Pour empiler carrousel et points */
+        justify-content: center;
+    }
+
+
+        /*Style pour le carrousel*/
+        .carrousel {
+            display: flex;
+            box-sizing: border-box;
+            justify-content: space-around;
+        }
+
+            .carrouselImages {
+                width: 30%;
+            }
+
+                .carrouselImages img {
+                    width: 100%;
+                    border: solid 2px #6d071a;
+                    border-radius: 10px;
+                }
+
+            .bouton {
+                display: flex;
+                align-items: center;
+            }
+
+                .boutonSuivant, .boutonPrecedent {
+                    background-color: transparent;
+                    border: none;
+                    font-size: 2em;
+                    color: #6d071a;
+                    cursor: pointer;
+                }
+
+            .pointsCarrousel {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                gap: 8px;
+            }
+
+                .point {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background-color: #ccc;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+                }
+
+                .point.actif {
+                    background-color: #6d071a;
+                }
+
+/*Style pour petit dejeuner*/
+.petitDejeuner {
+    margin-top: 50px;
+    box-sizing: border-box;
+
+    background-color: #C8B8BA;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+    .imagePetitDejeuner {
+        width : 33%;
+    }
+
+        .imagePetitDejeuner img{
+            margin: 5%;
+            width : 100%;
+            border: solid 2px #6d071a;
+            border-radius: 10px;
+        }
+
+    .textPetitdejeuner {
+        width : 66%;
+
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+        .textPetitdejeuner h2 {
+            color: #6d071a;
+            font-family: "segoe Script", cursive;
+            font-size: 20px;
+        }
+
+        .textPetitdejeuner p {
+            font-size: 16px;
+            font-family: "DM Serif Display", serif;
+        }
+

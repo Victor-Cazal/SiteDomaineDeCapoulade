@@ -6,10 +6,13 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="Images/manoir.png" type="image/x-icon">
+        <link rel="icon" href="Images/vignoble.png" type="image/x-icon">
         <title>Domaine de Capoulade</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="enTete.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="piedDePage.css">
+        <script src="enTete.js"></script>
+        <script src="piedDePage.js" defer></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,35 +23,15 @@
     <!--Corp du site-->
     <body>
 
-        <!--En tête du site-->
-        <header>
-
-            <div class="enTete" id="headerAnimé">
-
-                <!--Logo-->
-                <div class="logo">
-                    <img src="Images/logo.jpg" alt="Logo du header">
-                </div>
-
-                <div class="menu">
-
-                    <!--Titre-->
-                    <h1>Domaine de Capoulade</h1>
-                    <h2>- Chambres d'hôtes -</h2>
-
-                    <!--Menu de navigation-->
-                    <nav>
-                        <ul>
-                            <li><a href="chambre.html">Chambre</a></li>
-                            <li><a href="#">Contact et Réservation</a></li>
-                        </ul>
-                    </nav>
-
-                </div>
-
-            </div>
-
-        </header>
+        <!--En tete-->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                chargerEnTete([
+                    { text: "Chambre", href: "chambre.html" },
+                    { text: "Contact et Réservation", href: "contactEtReservation.html" }
+                ]);
+            });
+        </script>
 
             <!--Domaine-->
             <section class="domaine">
@@ -78,7 +61,7 @@
             <!--Chambre-->
             <section class="chambre">
 
-                    <h2>La chambre</h2>
+                    <a href="chambre.html"><h2>La chambre</h2></a>
 
                     <div class="photosChambre">
 
@@ -101,20 +84,20 @@
 
                     <div class="coordonnées">
 
-                        <h2>Contact</h2>
+                        <a href="contactEtReservation.html" class="lienContactEtReservation"><h2>Contact et réservation</h2></a>
 
                         <div class="coordonnée">
-                            <img src="Images/telephone.png" alt="Icone téléphone">
-                            <p>04 68 32 67 68</p>
+                            <img src="Images/reservation.png" alt="Icône calandrier">
+                            <p>Réservation via <a href="https://www.gites-de-france.com/fr/occitanie/aude/domaine-de-capoulade-11g900405" class="lienExt">Gîte de france</a> ou <a href="https://www.booking.com/hotel/fr/domaine-de-capoulade.fr.html?aid=318615&label=New_French_FR_FR_21427174465-Pk3jEylX2FWP%2An3y4lDZiQS637818831021%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-162435868585%3Alp9055225%3Ali%3Adec%3Adm%3Aag21427174465%3Acmp339479545&sid=b383b80ed60535a2b7b131b7cbc9846a&dest_id=900039110&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1745089007&srpvid=b15f85068686031e&type=total&ucfs=1&" class="lienExt">Booking</a></p>
                         </div>
 
                         <div class="coordonnée">
-                            <img src="Images/mail.png" alt="Icone mail">
-                            <p>oizehfoih@gmail.com</p>
+                            <img src="Images/contactez-nous.png" alt="Icône contact">
+                            <p>Vous pouvez nous contacter <a href="contactEtReservation.html" class="lienExt">ici</a></p>
                         </div>
 
                         <div class="coordonnée">
-                            <img src="Images/adresse.png" alt="Icone adresse">
+                            <img src="Images/localisateur.png" alt="Icône localisation">
                             <p>Domaine de Capoulade 11100 Narbonne</p>
                         </div>
 
@@ -128,23 +111,17 @@
 
             </section>
 
-            <footer>
-
-                <div class="piedDePage">
-
-                    <div class="droitImage">
-                        <a href="https://www.flaticon.com/fr" title="immobilier icônes">Toutes les icones ont été créées par Freepik - Flaticon</a>
-                    </div>
-
-                    <div class="logoPartenaire">
-                        <img src="Images/logoGiteDeFrance.png" alt="Logo de gite de France">
-                    </div>
-
-                </div>
-
-            </footer>
-
-
+        <!--Footer-->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                chargerPiedDePage([
+                    { text: "Favicone par kornkun - flaticon.com", href: "https://www.flaticon.com/fr/icones-gratuites/vignoble" },
+                    { text:"Icône calandrier par Aldo Cervantes - flaticon.com", href:"https://www.flaticon.com/fr/icones-gratuites/reservation"},
+                    { text:"Icône contact par Uniconlabs- flaticon.com", href:"https://www.flaticon.com/fr/icones-gratuites/nous-contacter"},
+                    { text:"Icône localisation par Prosymbols Premium - flaticon.com", href:"https://www.flaticon.com/fr/icones-gratuites/emplacement"}
+                ]);
+            });
+        </script>
 
     </body>
 

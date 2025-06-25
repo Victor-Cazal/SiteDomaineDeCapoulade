@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Images/vignoble.png" type="image/x-icon">
+  <title>Domaine de Capoulade</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="enTete.css">
+  <link rel="stylesheet" href="contactEtReservation.css">
+
+  <script src="enTete.js"></script>
+  <script src="contactEtReservation.js"></script>
+  <!--EmailJS service-->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("oKlpI_Uk1rekdbigm");
+    })();
+  </script>
+
+</head>
+
+<body>
+
+  <!--En tete du site-->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      chargerEnTete([
+        { text: "Accueil", href: "index.html" },
+        { text: "Chambre", href: "chambre.html" }
+      ]);
+    });
+  </script>
+
+  <section class="reservation">
+    <div class="lienReservation">
+      <h2>Réservation</h2>
+      <div class="lien">
+        <p>Vous pouvez reserver une chambre via Gîte de France <a href="https://www.gites-de-france.com/fr/occitanie/aude/domaine-de-capoulade-11g900405">ici</a></p>
+      </div>
+      <div class="lien">
+        <p>Vous pouvez réserver une chambre via Booking <a href="https://www.booking.com/hotel/fr/domaine-de-capoulade.fr.html?aid=318615&label=New_French_FR_FR_21427174465-Pk3jEylX2FWP%2An3y4lDZiQS637818831021%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-162435868585%3Alp9055225%3Ali%3Adec%3Adm%3Aag21427174465%3Acmp339479545&sid=b383b80ed60535a2b7b131b7cbc9846a&dest_id=900039110&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1745089007&srpvid=b15f85068686031e&type=total&ucfs=1&">ici</a></p>
+      </div>
+    </div>
+    <div class="plan">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46529.386600924605!2d3.0073822031721162!3d43.207671607933705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b1abe4ee32cd97%3A0x17af80e41c7b8e8f!2sDom.%20de%20Capoulade%2C%2011100%20Narbonne!5e0!3m2!1sfr!2sfr!4v1705434087052!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </section>
+
+  <!--Formulaire de contact-->
+  <div class="contact">
+    <h2>Une question ? Contactez-nous !</h2>
+    <form id="contactFormulaire">
+      <div class="contactDonnees">
+        <div class="colonneGauche">
+          <div class="ligneFormulaire">
+            <label for="email">Votre adresse email :</label>
+            <input type="email" id="email" name="email" required placeholder="exemple@mail.com">
+          </div>
+          <div class="ligneFormulaire">
+            <label for="nom">Votre nom et prénom :</label>
+            <input type="text" id="nom" name="nom" required placeholder="Nom Prénom">
+          </div>
+        </div>
+        <div class="colonneDroite">
+          <div class="ligneFormulaire">
+            <label for="objet">Objet de votre demande :</label>
+            <input type="text" id="objet" name="objet" required placeholder="Objet">
+          </div>
+          <div class="ligneFormulaireMessage">
+            <label for="message">Votre message :</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+        </div>
+      </div>
+      <button type="submit">Envoyer</button>
+      <p id="confirmation"></p>
+    </form>
+  </div>
+
+
+</body>
+</html>

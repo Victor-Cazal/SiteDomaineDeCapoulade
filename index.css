@@ -10,44 +10,44 @@
     justify-content: space-between;
 }
 
-.domaineImage {
-    width: 35%;
-    margin: 10px;
+    .domaineImage {
+        width: 35%;
+        margin: 10px;
 
-}
+    }
 
-.domaineImage img {
-    width: 100%;
-    border: solid 2px #6d071a;
-    border-radius: 10px;
-}
+        .domaineImage img {
+            width: 100%;
+            border: solid 2px #6d071a;
+            border-radius: 10px;
+        }
 
-.domaineTexte {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
+    .domaineTexte {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
 
-.domaineTexte h2 {
-    color: #6d071a;
-    font-family: "segoe Script", cursive;
-    font-size: 20px;
-}
+        .domaineTexte h2 {
+            color: #6d071a;
+            font-family: "segoe Script", cursive;
+            font-size: 20px;
+        }
 
-.domaineTexte ul {
-    margin: 0;
-    padding: 0;
+        .domaineTexte ul {
+            margin: 0;
+            padding: 0;
 
-    list-style: none;
-}
+            list-style: none;
+        }
 
-.domaineTexte ul li {
-    margin-bottom: 5px;
+            .domaineTexte ul li {
+                margin-bottom: 5px;
 
-    font-size: 16px;
-    font-family: "DM Serif Display", serif;
-}
+                font-size: 16px;
+                font-family: "DM Serif Display", serif;
+            }
 
 /*Style pour image parallax*/
 .photoParallax {
@@ -72,33 +72,33 @@
     text-align: center;
 }
 
-.chambre a {
-    color: #6d071a;
-    font-family: "segoe Script", cursive;
+    .chambre a {
+        color: #6d071a;
+        font-family: "segoe Script", cursive;
 
-    text-decoration: none;
-    transition: color 0.3s;
-}
+        text-decoration: none;
+        transition: color 0.3s;
+    }
 
     .chambre a:hover {
         color: #BB9FA3;
     }
 
-.photosChambre {
-    display: flex;
-    justify-content: space-around;
-}
+    .photosChambre {
+        display: flex;
+        justify-content: space-around;
+    }
 
-.photoChambre {
-    width: 30%;
-    margin-bottom: 10px;
-}
+        .photoChambre {
+            width: 30%;
+            margin-bottom: 10px;
+        }
 
-.photoChambre img {
-    width: 100%;
-    border: solid 2px #6d071a;
-    border-radius: 10px;
-}
+            .photoChambre img {
+                width: 100%;
+                border: solid 2px #6d071a;
+                border-radius: 10px;
+            }
 
 /*Style pour la section contact*/
 .contact {
@@ -113,64 +113,58 @@
     align-items: center;
 }
 
-.coordonnées {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.lienContactEtReservation{
-    color: #6d071a;
-    font-family: "segoe Script", cursive;
-
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-    .lienContactEtReservation:hover {
-        color: #BB9FA3;
+    .coordonnées {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-.coordonnée {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
+        .lienContactEtReservation{
+            color: #6d071a;
+            font-family: "segoe Script", cursive;
 
-.coordonnée p {
-    font-size: 16px;
-    font-family: "DM Serif Display", serif;
-}
+            text-decoration: none;
+            transition: color 0.3s;
+        }
 
-.coordonnée img{
-    max-width: 40px;
-    height: 40px;
-    padding-right: 50px;
-}
+        .lienContactEtReservation:hover {
+            color: #BB9FA3;
+        }
 
-.lienExt {
-    color: #6d071a;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: all 0.3s ease;
-}
+        .coordonnée {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
 
-.lienExt:hover {
-    border-bottom: 2px solid #6d071a;
-}
+            .coordonnée img{
+                max-width: 40px;
+                height: 40px;
+                padding-right: 50px;
+            }
 
-.plan {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: solid 2px  #BB9FA3;
-}
+            .coordonnée p {
+                font-size: 16px;
+                font-family: "DM Serif Display", serif;
+            }
 
-.plan iframe {
-    height: 300px;
-}
+                .lienExt {
+                    color: #6d071a;
+                    text-decoration: none;
+                    border-bottom: 2px solid transparent;
+                    transition: all 0.3s ease;
+                }
 
-/*Style pour le pied de page*/
-footer {
-    display: flex;
-    justify-content: center;
-}
+                .lienExt:hover {
+                    border-bottom: 2px solid #6d071a;
+                }
+
+    .plan {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: solid 2px  #BB9FA3;
+    }
+
+        .plan iframe {
+            height: 300px;
+        }

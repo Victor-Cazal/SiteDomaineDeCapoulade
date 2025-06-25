@@ -18,6 +18,10 @@
 
   <script src="enTete.js"></script>
   <script src="contactEtReservation.js"></script>
+
+  <script src="piedDePage.js" defer></script>
+  <link rel="stylesheet" href="piedDePage.css">
+
   <!--EmailJS service-->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
@@ -86,6 +90,15 @@
       <p id="confirmation"></p>
     </form>
   </div>
+
+  <!--Footer-->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      chargerPiedDePage([
+        { text: "Favicone par kornkun - flaticon.com", href: "https://www.flaticon.com/fr/icones-gratuites/vignoble" }
+      ]);
+    });
+  </script>
 
 
 </body>

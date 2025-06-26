@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 
+  <!-- Métadonnées -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,11 +18,11 @@
   <link rel="stylesheet" href="piedDePage.css">
 
   <!-- script JS-->
-  <script src="chambre.js"></script>
+  <script src="chambre.js" defer></script>
   <script src="enTete.js"></script>
   <script src="piedDePage.js" defer></script>
 
-  <!-- ploices-->
+  <!-- Polices-->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
@@ -29,7 +31,7 @@
 
 <body>
 
-  <!--En tete du site-->
+  <!-- ====== En tête dynamique ====== -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       chargerEnTete([
@@ -39,9 +41,10 @@
     });
   </script>
 
-  <!--Section chambre du Fossat-->
+  <!-- ====== Section "Chambre du Fossat" ====== -->
   <article class="chambre">
 
+    <!-- Desciption de la chmabre -->
     <div class="descriptionChambre">
       <h2 class="titre">Chambre du Fossat</h2>
       <p class="textePrimaire">
@@ -54,19 +57,20 @@
       <p class="texteTertiaire">Le nom Fossat fait référence au château du Fossat, en région toulousaine, ayant apartenu à notre famille. Vous pourrez admirer de vieilles photos argentiques et un tableau représentant le château sur les murs de la chambre.</p>
     </div>
 
+    <!-- Photos de la chmabre (Carousel) -->
     <div class="imagesChambre">
       <div class="carrousel">
         <div class="carrouselBoutons">
           <button class="carouselBoutonPrecedent">&#10094;</button>
         </div>
         <div class="conteneurPhoto">
-          <img class="photo" src="Images/chambre1.jpeg" alt="Chambre 1">
-          <img class="photo" src="Images/chambre2.jpeg" alt="Chambre 2">
-          <img class="photo" src="Images/chambre3.jpeg" alt="Chambre 3">
-          <img class="photo" src="Images/chambre4.jpeg" alt="Chambre 4">
-          <img class="photo" src="Images/chambre5.jpeg" alt="Chambre 5">
-          <img class="photo" src="Images/chambre6.jpeg" alt="Chambre 6">
-          <img class="photo" src="Images/chambre7.jpeg" alt="Chambre 7">
+          <img class="photo" src="Images/chambre1.jpeg" alt="Chambre décoré avec lit double et litterie d'été">
+          <img class="photo" src="Images/chambre2.jpeg" alt="Chambre décoré avec lit double et litterie d'hiver">
+          <img class="photo" src="Images/chambre3.jpeg" alt="Décoration et mobilier de la chambre">
+          <img class="photo" src="Images/chambre4.jpeg" alt="Grande salle de bain avec douche">
+          <img class="photo" src="Images/chambre5.jpeg" alt="Grande salle de bain">
+          <img class="photo" src="Images/chambre6.jpeg" alt="Chambre et son mobiler">
+          <img class="photo" src="Images/chambre7.jpeg" alt="Grand salon décoré">
         </div>
         <div class="carrouselBoutons">
           <button class="carrouselBoutonSuivant">&#10095;</button>
@@ -74,16 +78,21 @@
       </div>
       <div class="carrouselPointsDefilement"></div>
     </div>
+
   </article>
 
-<!--Petit dej-->
-<div class="petitDejeuner">
-  <div class="imagePetitDejeuner">
-    <img src="Images/petitDejeuner.jpeg" alt="Petit déjeuner">
+<!-- ========== Article "Petit déjeuner" ==========-->
+<article class="petitDejeuner">
+
+  <!-- Photo du petit déjeuner -->
+  <div class="conteneurPhoto">
+    <img class="photo" src="Images/petitDejeuner.jpeg" alt="Petit déjeuner avec boissons chaude, vienoiserie, pain, confiture">
   </div>
+
+  <!-- description du petit déjeuner -->
   <div class="textPetitdejeuner">
-    <h2>Petit déjeuner à la française</h2>
-    <p>
+    <h2 class="titre">Petit déjeuner à la française</h2>
+    <p class="textePrimaire">
       Boisson chaude (thé, café ou chocolat).<br>
       Jus de fruit artisanal et local.<br>
       Viennoiserie.<br>
@@ -92,9 +101,10 @@
       Yaourt et gateau maison.
     </p>
   </div>
-</div>
 
-  <!--Footer-->
+</article>
+
+  <!-- ====== Pied de page dynamique ====== -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       chargerPiedDePage([
@@ -102,7 +112,6 @@
       ]);
     });
   </script>
-
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-/*section chambre du Fossat*/
+/* ====== Article "Chambre du Fossat" ====== */
 .chambre {
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,7 @@
     }
 
     .imagesChambre{
-        margin : 5px 0 5px;
+        margin : 2% 0 2% 0;
         width: 70%;
 
         display: flex;
@@ -23,31 +23,14 @@
         justify-content: center;
     }
 
-/*Style petit dejeuner*/
+/* ======== Article "Petit dejeuner" ====== */
 .petitDejeuner {
-    margin-top: 50px;
-    box-sizing: border-box;
-
-    background-color: #C8B8BA;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.3);
-
     display: flex;
     justify-content: space-between;
 }
 
-    .imagePetitDejeuner {
-        width : 33%;
-    }
-
-        .imagePetitDejeuner img{
-            margin: 5%;
-            width : 100%;
-            border: solid 2px #6d071a;
-            border-radius: 10px;
-        }
-
     .textPetitdejeuner {
-        width : 66%;
+        width : 65%;
 
         display : flex;
         flex-direction: column;
@@ -55,14 +38,24 @@
         text-align: center;
     }
 
-        .textPetitdejeuner h2 {
-            color: #6d071a;
-            font-family: "segoe Script", cursive;
-            font-size: 20px;
-        }
+/* ====== Responsive ======*/
+@media screen and (max-width: 768px) {
+    .chambre {
+        flex-direction: column;
+        align-items: center;
+    }
 
-        .textPetitdejeuner p {
-            font-size: 16px;
-            font-family: "DM Serif Display", serif;
-        }
+    .descriptionChambre, .imagesChambre {
+        width: 90%;
+    }
+
+    .petitDejeuner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textPetitdejeuner, .petitDejeuner.conteneurPhoto {
+        width: 90%;
+    }
+}
 

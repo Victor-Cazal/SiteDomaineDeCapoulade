@@ -1,50 +1,43 @@
+/* ====== Variable de style ====== */
 :root {
     /*Couleurs*/
     --couleurPrimaire: #6d071a;
-    --couleurSecondaire: #BB9FA3;
+    --couleurSecondaire: #C8B8BA;
     --couleurTertiaire: #333;
-    --couleurDeFond: #f2f2f2;
-    --couleurDeFondSection: #C8B8BA;
 
     /*Propriétés des textes*/
     --policePrincipal: 'DM Serif Display', serif;
     --policeSecondaire: "Segoe Script", cursive;
-    --tailleTire: 20px;
+    --tailleTire: 30px;
     --tailleTexte: 16px;
+
+    /*Propriétés des liens*/
+    --etatPassif : 2px solid transparent;
+    --etatActif : 2px solid;
+    --transition : all 0.3s ease;
 
     /*Bordures et marges*/
     --ombre: 0 -5px 10px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.3);
     --bordure: 2px solid var(--couleurPrimaire);
     --bordureAngle: 10px;
-    --margin-standard: 10px;
-    --padding-standard: 15px;
+    --margeStandard: 2%;
+    --margeSection: 50px;
 }
 
+/* ====== Style général des section et article ====== */
 section, article{
-    margin-top: 50px;
     box-sizing: border-box;
-    background-color: var(--couleurDeFondSection);
+    margin-top: var(--margeSection);
+    background-color: var(--couleurSecondaire);
     box-shadow: var(--ombre);
 }
 
-/* Textes */
+/* ====== Textes ====== */
 .titre {
     color: var(--couleurPrimaire);
     font-family: var(--policeSecondaire);
     font-size: var(--tailleTire);
 }
-
-.titreLien {
-    color: var(--couleurPrimaire);
-    font-family: var(--policeSecondaire);
-    font-size: var(--tailleTire);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-    .titreLien:hover {
-        color: var(--couleurSecondaire);
-    }
 
 .textePrimaire {
     font-family: var(--policePrincipal);
@@ -64,21 +57,30 @@ section, article{
     font-size: var(--tailleTexte);
 }
 
-.texteLien {
-    color: var(--couleurPrimaire);
+.titreLien {
     text-decoration: none;
+    color: var(--couleurPrimaire);
+    font-family: var(--policeSecondaire);
+    font-size: var(--tailleTire);
     border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
 }
 
-    .texteLien:hover {
-        border-bottom: solid;
+.texteLien {
+    text-decoration: none;
+    color: var(--couleurPrimaire);
+    border-bottom: var(--etatPassif);
+    transition: var(--transition);
+}
+
+    .texteLien:hover, .titreLien:hover {
+        border-bottom: var(--etatActif);
     }
 
-/* Images */
+/* ====== Images ====== */
 .conteneurPhoto {
-    width: 30%;
-    margin: var(--margin-standard);
+    width: 35%;
+    margin: var(--margeStandard);
 }
 
     .photo {
@@ -87,7 +89,18 @@ section, article{
         border-radius: var(--bordureAngle);
     }
 
-/* Carousel */
+.conteneurLogo {
+    width: 40px;
+    display: flex;
+    align-items: center;
+}
+
+    .logo {
+        width: 100%;
+    }
+
+
+/* ====== Carousel ====== */
 .carrousel {
     display: flex;
     box-sizing: border-box;
@@ -102,27 +115,47 @@ section, article{
 .carouselBoutonPrecedent, .carrouselBoutonSuivant {
     background-color: transparent;
     border: none;
-    font-size: 2em;
-    color: #6d071a;
+    font-size: var(--tailleTire);
+    color: var(--couleurPrimaire);
     cursor: pointer;
 }
 
 .carrouselPointsDefilement {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: var(--margeStandard);
     gap: 8px;
+    position: relative;
 }
 
     .point {
         width: 12px;
         height: 12px;
         border-radius: 50%;
-        background-color: #ccc;
+        background-color: var(--couleurTertiaire);
         cursor: pointer;
-        transition: background-color 0.3s;
+        transition: var(--transition);
     }
 
         .point.actif {
-            background-color: #6d071a;
+            background-color: var(--couleurPrimaire);
         }
+
+/* ====== Plan ====== */
+.plan {
+    width: 50%;
+    margin: var(--margeStandard);
+    border: var(--bordure);
+}
+
+.plan iframe {
+    width : 100%;
+    max-height: 300px;
+}
+
+/* ====== Responsive ======*/
+@media screen and (max-width: 768px) {
+    .conteneurPhoto, .plan {
+        width: 70%;
+    }
+}

@@ -62,7 +62,7 @@
 
 
 /*Formulaire de contact*/
-.contact {
+.contactEtReservation {
     margin-top: 50px;
     background-color: #C8B8BA;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -74,7 +74,7 @@
     padding: 40px 20px;
 }
 
-    .contact h2 {
+    .contactEtReservation h2 {
         color: #6d071a;
         font-family: "Segoe Script", cursive;
         margin-bottom: 30px;

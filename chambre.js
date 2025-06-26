@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const images = document.querySelectorAll('.photo');
+
+    //Création des variables (récupération des éléments html)
+    const images = document.querySelectorAll('.imagesChambre .photo');
     const boutonPrecedent = document.querySelector('.carouselBoutonPrecedent');
     const pointsCarrousel = document.querySelector('.carrouselPointsDefilement');
     const boutonSuivant = document.querySelector('.carrouselBoutonSuivant');
     let currentIndex = 0;
 
-    // Crée les points de défilement
+    // Création des points de défilement
     images.forEach((_, index) => {
         const point = document.createElement('div');
         point.classList.add('point');
@@ -16,16 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
         pointsCarrousel.appendChild(point);
     });
     const points = document.querySelectorAll('.point');
-
-    // Affiche uniquement l'image courante
-    function updateDisplay() {
-        images.forEach((img, index) => {
-            img.style.display = index === currentIndex ? 'block' : 'none';
-        });
-        points.forEach((point, index) => {
-            point.classList.toggle('actif', index === currentIndex);
-        });
-    }
 
     // Gérer clic bouton suivant
     boutonSuivant.addEventListener('click', () => {
@@ -39,5 +31,16 @@ document.addEventListener('DOMContentLoaded', function () {
         updateDisplay();
     });
 
-    updateDisplay(); // Initialisation
+    // Initialisation du carrousel
+    updateDisplay();
+
+    // Fontcion Carrousel (Afficher seulement l'image courante et rendre actif le point de défilement correspondant)
+    function updateDisplay() {
+        images.forEach((img, index) => {
+            img.style.display = index === currentIndex ? 'block' : 'none';
+        });
+        points.forEach((point, index) => {
+            point.classList.toggle('actif', index === currentIndex);
+        });
+    }
 });

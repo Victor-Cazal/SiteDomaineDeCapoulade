@@ -1,4 +1,4 @@
-/* Style pour la section domaine */
+/* ====== Style pour l'article domaine ====== */
 .domaine {
     margin-top: 140px;
     display: flex;
@@ -23,7 +23,7 @@
                 font-size: 16px;
             }
 
-/* Style pour image parallax */
+/* ====== Style pour image parallax ====== */
 .photoParallax {
     margin-top: 50px;
     background: url('Images/photoDomaine.jpg') no-repeat fixed;
@@ -32,7 +32,7 @@
     min-height: 500px;
 }
 
-/* Style pour la section chambre */
+/* ====== Style pour la section "Chambre" ======= */
 .chambre {
     display: flex;
     flex-direction: column;
@@ -44,36 +44,46 @@
         justify-content: space-around;
     }
 
-/* Style pour la section contact */
-.contact {
+/* ====== Style pour la section "Contact et reservation" ====== */
+.contactEtReservation {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-    .coordonnées {
+    .adresseEtCoordonnées {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: var(--margeStandard);
+        width: 50%;
+    }
+
+        .informations {
+            width: 70%;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+            .information {
+                display: flex;
+                align-items: center;
+            }
+
+            .information p {
+                margin-left: 10% ;
+            }
+
+/* ====== Responsive ======*/
+@media screen and (max-width: 768px) {
+    .domaine, .photosChambre, .contactEtReservation {
         flex-direction: column;
         align-items: center;
     }
 
-        .coordonnée {
-            display: flex;
-            align-items: center;
-            width: 100%;
-        }
-
-            .coordonnée img {
-                max-width: 40px;
-                height: 40px;
-                padding-right: 50px;
-            }
-
-.plan {
-    margin: var(--margin-standard) 0;
-    border: var(--bordure);
-}
-
-.plan iframe {
-    height: 300px;
+    .domaineTexte, .adresseEtCoordonnées, .informations {
+        width: 90%;
+    }
 }

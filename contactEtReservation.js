@@ -1,6 +1,8 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-    const formulaire = document.getElementById('contactFormulaire');
+
+    //Création des variables (récupération des éléments html)
+    const formulaire = document.getElementById('formulaire');
     const confirmation = document.getElementById('confirmation');
 
     formulaire.addEventListener('submit', function (e) {

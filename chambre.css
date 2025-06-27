@@ -40,21 +40,12 @@
 
 /* ====== Responsive ======*/
 @media screen and (max-width: 768px) {
-    .chambre {
+    .chambre, .petitDejeuner {
         flex-direction: column;
         align-items: center;
     }
 
-    .descriptionChambre, .imagesChambre {
-        width: 90%;
-    }
-
-    .petitDejeuner {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .textPetitdejeuner, .petitDejeuner.conteneurPhoto {
+    .descriptionChambre, .imagesChambre, .textPetitdejeuner{
         width: 90%;
     }
 }

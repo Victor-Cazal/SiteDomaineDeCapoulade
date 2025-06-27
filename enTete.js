@@ -1,34 +1,34 @@
 function chargerEnTete(navigateurItems = []) {
 
-    // Page d'acceuil ?
+    // ======================= Création de l'en tête en fonction de la page courante =======================
     const estAccueil = window.location.pathname.endsWith("index.html") || window.location.pathname === "/";
 
-    //Inserssion de l'en tete
+    //Récupération du fichier enTete.html
     fetch('enTete.html')
         .then(response => response.text())
         .then(data => {
-            const headerContainer = document.createElement('header');
 
-            // Si ce n'est pas la page d'accueil, on de la classe shrink
-            if (!estAccueil) {
-                // Ajout temporaire dans une div pour manipuler facilement le contenu HTML
-                const tempDiv = document.createElement('div');
-                tempDiv.innerHTML = data;
+            //Création d'une balise html "header"
+            const enTete = document.createElement('header');
+            //Insertion du contenue de "enTete.html" dans la balise html "header"
+            enTete.innerHTML = data;
 
-                const headerEl = tempDiv.querySelector('#headerAnimé');
-                if (headerEl) {
-                    headerEl.classList.add('shrink');
-                }
+            //Récupération du première élément HTML de l'en-tête
+            const enTeteElementParent = enTete.querySelector('#headerAnimé');
 
-                data = tempDiv.innerHTML;
+            //Vérification de la page courante
+            if(!estAccueil) { //Si ce n'est pas la page d'accueil, on applique le style réduit (voir CSS)
+                enTeteElementParent.classList.add('shrink');
             }
 
-            headerContainer.innerHTML = data;
-            document.body.insertBefore(headerContainer, document.body.firstChild);
+            //Insertion de l'en-tête dans la page courante
+            document.body.insertBefore(enTete, document.body.firstChild);
 
-            // Menu dynamique
-            const navigateur = document.getElementById('menuDynamique');
-            if (navigateur) {
+            // ======================= Gestion du menu dynamique =======================
+            //Création dynamique du navigateur
+            const navigateur = document.querySelector('#menuDynamique');
+            console.log('Navigatuer', navigateur);
+            if (navigateur && navigateurItems) {
                 navigateurItems.forEach(item => {
                     const baliseLi = document.createElement('li');
                     baliseLi.innerHTML = `<a href="${item.href}">${item.text}</a>`;
